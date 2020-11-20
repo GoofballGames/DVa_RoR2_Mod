@@ -59,15 +59,5 @@ namespace DVa_RoR2_Mod.Properties {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        public static byte[] Skills {
-            get {
-                object obj = ResourceManager.GetObject("Skills", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
     }
 }

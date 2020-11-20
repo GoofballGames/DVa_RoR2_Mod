@@ -49,7 +49,7 @@ namespace GoofballGames
             mySkillDef.beginSkillCooldownOnSkillEnd = true;
             mySkillDef.canceledFromSprinting = true;
             mySkillDef.fullRestockOnAssign = true;
-            mySkillDef.interruptPriority = InterruptPriority.Any;
+            mySkillDef.interruptPriority = InterruptPriority.Frozen;
             mySkillDef.isBullets = true;
             mySkillDef.isCombatSkill = true;
             mySkillDef.mustKeyPress = false;
@@ -58,7 +58,7 @@ namespace GoofballGames
             mySkillDef.requiredStock = 0;
             mySkillDef.shootDelay = 0.15f;
             mySkillDef.stockToConsume = 0;
-            //mySkillDef.icon = Resources.Load<Sprite>("NotAnActualPath");
+            //mySkillDef.icon = Resources.Load<Sprite>("");  Gotta figure out bundles, I think... #HELP
             mySkillDef.skillDescriptionToken = "TOKKI_PRIMARY_FUSIONCANNONS_DESCRIPTION";
             mySkillDef.skillName = "TOKKI_PRIMARY_FUSIONCANNONS_NAME";
             mySkillDef.skillNameToken = "TOKKI_PRIMARY_FUSIONCANNONS_NAME";
