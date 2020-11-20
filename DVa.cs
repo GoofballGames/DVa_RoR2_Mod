@@ -6,17 +6,21 @@ using R2API.AssetPlus;
 using R2API.Utils;
 using RoR2;
 using RoR2.Skills;
+//using SkillsPlusPlus;
 using UnityEngine;
 
 namespace GoofballGames
 {
     [BepInDependency("com.bepis.r2api")]
-    [BepInPlugin("com.GoofballGames.DVa", "D.Va", "0.1.1")]
+    //[BepInDependency("com.cwmlolzlz.skills")]
+    [BepInPlugin("com.GoofballGames.DVa", "D.Va", "0.1.2")]
     [R2APISubmoduleDependency(nameof(LoadoutAPI), nameof(SurvivorAPI), nameof(AssetPlus))]
     public class DVa : BaseUnityPlugin
     {
         public void Awake()
         {
+            //SkillModifierManager.LoadSkillModifiers();
+
             //Until I figure out how to make an assetbundle for the characters. #HELP
             var myChar = Resources.Load<GameObject>("prefabs/characterbodies/CommandoBody");
 
@@ -94,10 +98,6 @@ namespace GoofballGames
             //    viewableNode = new ViewablesCatalog.Node(mySkillDef.skillNameToken, false, null)
             //};
             #endregion
-
-
         }
-
-
     }
 }
